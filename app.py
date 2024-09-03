@@ -3,8 +3,13 @@ from openai import OpenAI
 
 with st.sidebar:
     openai_api_key = st.text_input(
-        "OpenAI API Key", key="chatbot_api_key", type="password"
+        "OpenAI API Key",
+        key="chatbot_api_key",
+        type="password",
+        placeholder="Insert your OpenAI API key here...",
     )
+    "[Get an OpenAI API key](https://platform.openai.com/account/api-keys)"
+
 st.title("💬 Get Code Explain")
 st.caption("AI that gets code explain for you.")
 
